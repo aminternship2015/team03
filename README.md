@@ -12,3 +12,4 @@ am facut taskul 1
 tascul 3
 DISCRIPTION
 >>>>>>> origin/master
+READ ME

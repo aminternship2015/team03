@@ -48,6 +48,14 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Converters\Converters.csproj">
+      <Project>{773808f3-3ce1-4f6b-a63e-b5b8dc2800ca}</Project>
+      <Name>Converters</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DAL\DAL.csproj">
+      <Project>{731f431d-112d-44f9-aa12-abd72025a8f3}</Project>
+      <Name>DAL</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Models\Models.csproj">
       <Project>{a75db447-5ee5-4ac7-ba7a-e47e25dd9dff}</Project>
       <Name>Models</Name>

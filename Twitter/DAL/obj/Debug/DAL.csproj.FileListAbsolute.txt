@@ -5,3 +5,10 @@ D:\twitter\Twitter\DAL\bin\Debug\EntityFramework.dll
 D:\twitter\Twitter\DAL\bin\Debug\EntityFramework.xml
 D:\twitter\Twitter\DAL\obj\Debug\DAL.dll
 D:\twitter\Twitter\DAL\obj\Debug\DAL.pdb
+D:\git\team03\Twitter\DAL\bin\Debug\DAL.dll.config
+D:\git\team03\Twitter\DAL\bin\Debug\DAL.dll
+D:\git\team03\Twitter\DAL\bin\Debug\DAL.pdb
+D:\git\team03\Twitter\DAL\bin\Debug\EntityFramework.dll
+D:\git\team03\Twitter\DAL\bin\Debug\EntityFramework.xml
+D:\git\team03\Twitter\DAL\obj\Debug\DAL.dll
+D:\git\team03\Twitter\DAL\obj\Debug\DAL.pdb

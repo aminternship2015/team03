@@ -21,11 +21,11 @@ namespace Twitter.App_Start
             var builder = new ContainerBuilder();
             builder.RegisterControllers(Assembly.GetExecutingAssembly()).PropertiesAutowired();
             builder.RegisterType<UsersDal>().As<IUsersDal>();
-            builder.RegisterType<TweetsDal>().As<ITweetsDal>();
-            builder.RegisterType<FollowersDal>().As<IFollowersDal>();
-            builder.RegisterType<UsersService>().As<IUsersService>();
-            builder.RegisterType<FollowersService>().As<IFollowersService>();
-            builder.RegisterType<TweetsService>().As<ITweetsService>();
+            //builder.RegisterType<TweetsDal>().As<ITweetsDal>();
+            //builder.RegisterType<FollowersDal>().As<IFollowersDal>();
+            //builder.RegisterType<UsersService>().As<IUsersService>();
+            //builder.RegisterType<FollowersService>().As<IFollowersService>();
+            //builder.RegisterType<TweetsService>().As<ITweetsService>();
             Container = builder.Build();
 
             DependencyResolver.SetResolver(new AutofacDependencyResolver(Container));

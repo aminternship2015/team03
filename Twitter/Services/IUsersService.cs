@@ -10,5 +10,6 @@ namespace Services
     public interface IUsersService
     {
         List<UsersModel> GetAll();
+
     }
 }

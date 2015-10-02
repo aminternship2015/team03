@@ -1,0 +1,11 @@
+D:\git\team03\Twitter\Converters\bin\Debug\Converters.dll
+D:\git\team03\Twitter\Converters\bin\Debug\Converters.pdb
+D:\git\team03\Twitter\Converters\bin\Debug\DAL.dll
+D:\git\team03\Twitter\Converters\bin\Debug\Models.dll
+D:\git\team03\Twitter\Converters\bin\Debug\EntityFramework.dll
+D:\git\team03\Twitter\Converters\bin\Debug\DAL.pdb
+D:\git\team03\Twitter\Converters\bin\Debug\Models.pdb
+D:\git\team03\Twitter\Converters\bin\Debug\EntityFramework.xml
+D:\git\team03\Twitter\Converters\obj\Debug\Converters.csprojResolveAssemblyReference.cache
+D:\git\team03\Twitter\Converters\obj\Debug\Converters.dll
+D:\git\team03\Twitter\Converters\obj\Debug\Converters.pdb

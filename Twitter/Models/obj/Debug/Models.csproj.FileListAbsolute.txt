@@ -3,3 +3,7 @@ D:\twitter\Twitter\Models\bin\Debug\Models.pdb
 D:\twitter\Twitter\Models\obj\Debug\Models.dll
 D:\twitter\Twitter\Models\obj\Debug\Models.pdb
 D:\twitter\Twitter\Models\obj\Debug\Models.csprojResolveAssemblyReference.cache
+D:\git\team03\Twitter\Models\bin\Debug\Models.dll
+D:\git\team03\Twitter\Models\bin\Debug\Models.pdb
+D:\git\team03\Twitter\Models\obj\Debug\Models.dll
+D:\git\team03\Twitter\Models\obj\Debug\Models.pdb

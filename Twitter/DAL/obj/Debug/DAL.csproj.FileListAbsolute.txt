@@ -1,0 +1,7 @@
+D:\twitter\Twitter\DAL\bin\Debug\DAL.dll.config
+D:\twitter\Twitter\DAL\bin\Debug\DAL.dll
+D:\twitter\Twitter\DAL\bin\Debug\DAL.pdb
+D:\twitter\Twitter\DAL\bin\Debug\EntityFramework.dll
+D:\twitter\Twitter\DAL\bin\Debug\EntityFramework.xml
+D:\twitter\Twitter\DAL\obj\Debug\DAL.dll
+D:\twitter\Twitter\DAL\obj\Debug\DAL.pdb

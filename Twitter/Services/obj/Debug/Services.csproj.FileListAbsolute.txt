@@ -1,0 +1,5 @@
+D:\twitter\Twitter\Services\bin\Debug\Services.dll
+D:\twitter\Twitter\Services\bin\Debug\Services.pdb
+D:\twitter\Twitter\Services\obj\Debug\Services.dll
+D:\twitter\Twitter\Services\obj\Debug\Services.pdb
+D:\twitter\Twitter\Services\obj\Debug\Services.csprojResolveAssemblyReference.cache

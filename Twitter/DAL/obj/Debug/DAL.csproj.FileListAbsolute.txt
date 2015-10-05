@@ -12,3 +12,11 @@ D:\git\team03\Twitter\DAL\bin\Debug\EntityFramework.dll
 D:\git\team03\Twitter\DAL\bin\Debug\EntityFramework.xml
 D:\git\team03\Twitter\DAL\obj\Debug\DAL.dll
 D:\git\team03\Twitter\DAL\obj\Debug\DAL.pdb
+C:\Users\dgherghisan\Documents\git\team03\Twitter\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
+C:\Users\dgherghisan\Documents\git\team03\Twitter\DAL\obj\Debug\DAL.dll
+C:\Users\dgherghisan\Documents\git\team03\Twitter\DAL\obj\Debug\DAL.pdb
+C:\Users\dgherghisan\Documents\git\team03\Twitter\DAL\bin\Debug\DAL.dll.config
+C:\Users\dgherghisan\Documents\git\team03\Twitter\DAL\bin\Debug\DAL.dll
+C:\Users\dgherghisan\Documents\git\team03\Twitter\DAL\bin\Debug\DAL.pdb
+C:\Users\dgherghisan\Documents\git\team03\Twitter\DAL\bin\Debug\EntityFramework.dll
+C:\Users\dgherghisan\Documents\git\team03\Twitter\DAL\bin\Debug\EntityFramework.xml

@@ -9,8 +9,8 @@ namespace DAL
     public interface ITweetsDal
     {
         List<Tweet> GetAll();
-        bool Add();
-        bool Update();
-        bool Delete();
+        //bool Add();
+        //bool Update();
+        //bool Delete();
     }
 }

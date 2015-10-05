@@ -29,5 +29,15 @@ namespace Services
             }
             return listOfUser;
         }
+        public List<UsersModel> Update(int id)
+        {
+            var users = userDal.Update(id);
+            List<UsersModel> listOfUser = new List<UsersModel>();
+            foreach (var user in users)
+            {
+                listOfUser.Add(userConvert.convertToUI(user));
+            }
+            return listOfUser;
+        } 
     }
 }

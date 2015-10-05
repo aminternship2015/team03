@@ -10,6 +10,6 @@ namespace Services
     public interface IUsersService
     {
         List<UsersModel> GetAll();
-
+        List<UsersModel> Update(int id);
     }
 }

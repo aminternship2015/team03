@@ -16,5 +16,17 @@ namespace DAL
                 return allUsers;
             }
         }
+
+        public List<User> Update(int id)
+        {
+            using (var dbContext = new TwitterEntities())
+            {
+                var userById = 
+                    from user in dbContext.Users
+                       where user.id_user==id
+                        select user;
+                return userById.ToList();
+            }
+        }
     }
 }

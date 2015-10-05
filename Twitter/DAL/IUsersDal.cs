@@ -10,7 +10,7 @@ namespace DAL
     {
         List<User> GetAll();
         //bool Add();
-        //bool Update();
+        List<User> Update(int id);
         //bool Delete();
     }
 }

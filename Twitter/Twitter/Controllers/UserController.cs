@@ -17,6 +17,11 @@ namespace Twitter.Controllers
             UsersService currentUserService = new UsersService();
             return View(currentUserService.GetAll());
         }
+        public ActionResult Edit(int id) 
+        {
+            UsersService currentUserService = new UsersService();
 
+            return View();
+        }
     }
 }

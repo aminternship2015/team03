@@ -20,5 +20,16 @@ namespace Converters
             listOfUser.Email = user.Email;
             return listOfUser;
         }
+
+        public User convertToDal(UsersModel user)
+        {
+            var listOfUser = new User();
+            listOfUser.id_user = user.id_user;
+            listOfUser.First_Name = user.First_Name;
+            listOfUser.Last_Name = user.Last_Name;
+            listOfUser.Password = user.Password;
+            listOfUser.Email = user.Email;
+            return listOfUser;
+        }
     }
 }

@@ -1,7 +1,7 @@
 USE [master]
 GO
 
-/****** Object:  Database [Twitter]    Script Date: 9/25/2015 5:20:50 PM ******/
+/****** Object:  Database [Twitter]    Script Date: 10/5/2015 11:26:41 AM ******/
 CREATE DATABASE [Twitter]
  CONTAINMENT = NONE
  ON  PRIMARY 

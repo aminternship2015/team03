@@ -9,3 +9,14 @@ D:\git\team03\Twitter\Converters\bin\Debug\EntityFramework.xml
 D:\git\team03\Twitter\Converters\obj\Debug\Converters.csprojResolveAssemblyReference.cache
 D:\git\team03\Twitter\Converters\obj\Debug\Converters.dll
 D:\git\team03\Twitter\Converters\obj\Debug\Converters.pdb
+C:\Users\dgherghisan\Documents\git\team03\Twitter\Converters\obj\Debug\Converters.csprojResolveAssemblyReference.cache
+C:\Users\dgherghisan\Documents\git\team03\Twitter\Converters\obj\Debug\Converters.dll
+C:\Users\dgherghisan\Documents\git\team03\Twitter\Converters\bin\Debug\Converters.dll
+C:\Users\dgherghisan\Documents\git\team03\Twitter\Converters\bin\Debug\Converters.pdb
+C:\Users\dgherghisan\Documents\git\team03\Twitter\Converters\bin\Debug\DAL.dll
+C:\Users\dgherghisan\Documents\git\team03\Twitter\Converters\bin\Debug\Models.dll
+C:\Users\dgherghisan\Documents\git\team03\Twitter\Converters\bin\Debug\EntityFramework.dll
+C:\Users\dgherghisan\Documents\git\team03\Twitter\Converters\bin\Debug\DAL.pdb
+C:\Users\dgherghisan\Documents\git\team03\Twitter\Converters\bin\Debug\Models.pdb
+C:\Users\dgherghisan\Documents\git\team03\Twitter\Converters\bin\Debug\EntityFramework.xml
+C:\Users\dgherghisan\Documents\git\team03\Twitter\Converters\obj\Debug\Converters.pdb

@@ -12,3 +12,8 @@ C:\Users\dgherghisan\Documents\git\team03\Twitter\Models\bin\Debug\Models.pdb
 C:\Users\dgherghisan\Documents\git\team03\Twitter\Models\obj\Debug\Models.csprojResolveAssemblyReference.cache
 C:\Users\dgherghisan\Documents\git\team03\Twitter\Models\obj\Debug\Models.dll
 C:\Users\dgherghisan\Documents\git\team03\Twitter\Models\obj\Debug\Models.pdb
+D:\git\team03\team03\Twitter\Models\bin\Debug\Models.dll
+D:\git\team03\team03\Twitter\Models\bin\Debug\Models.pdb
+D:\git\team03\team03\Twitter\Models\obj\Debug\Models.csprojResolveAssemblyReference.cache
+D:\git\team03\team03\Twitter\Models\obj\Debug\Models.dll
+D:\git\team03\team03\Twitter\Models\obj\Debug\Models.pdb

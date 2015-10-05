@@ -29,3 +29,16 @@ C:\Users\dgherghisan\Documents\git\team03\Twitter\Services\bin\Debug\EntityFrame
 C:\Users\dgherghisan\Documents\git\team03\Twitter\Services\obj\Debug\Services.csprojResolveAssemblyReference.cache
 C:\Users\dgherghisan\Documents\git\team03\Twitter\Services\obj\Debug\Services.dll
 C:\Users\dgherghisan\Documents\git\team03\Twitter\Services\obj\Debug\Services.pdb
+D:\git\team03\team03\Twitter\Services\bin\Debug\Services.dll
+D:\git\team03\team03\Twitter\Services\bin\Debug\Services.pdb
+D:\git\team03\team03\Twitter\Services\bin\Debug\Converters.dll
+D:\git\team03\team03\Twitter\Services\bin\Debug\DAL.dll
+D:\git\team03\team03\Twitter\Services\bin\Debug\Models.dll
+D:\git\team03\team03\Twitter\Services\bin\Debug\EntityFramework.dll
+D:\git\team03\team03\Twitter\Services\bin\Debug\Converters.pdb
+D:\git\team03\team03\Twitter\Services\bin\Debug\DAL.pdb
+D:\git\team03\team03\Twitter\Services\bin\Debug\Models.pdb
+D:\git\team03\team03\Twitter\Services\bin\Debug\EntityFramework.xml
+D:\git\team03\team03\Twitter\Services\obj\Debug\Services.csprojResolveAssemblyReference.cache
+D:\git\team03\team03\Twitter\Services\obj\Debug\Services.dll
+D:\git\team03\team03\Twitter\Services\obj\Debug\Services.pdb

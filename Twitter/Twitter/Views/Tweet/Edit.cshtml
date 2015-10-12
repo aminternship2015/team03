@@ -1,0 +1,48 @@
+﻿@model Models.TweetsModel
+
+@{
+    ViewBag.Title = "Edit";
+}
+
+<h2>Edit</h2>
+
+@using (Html.BeginForm("Edit","Tweet",FormMethod.Post)) {
+    @Html.ValidationSummary(true)
+
+    <fieldset>
+        <legend>TweetsModel</legend>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.id_tweet)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.id_tweet)
+            @Html.ValidationMessageFor(model => model.id_tweet)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.id_user)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.id_user)
+            @Html.ValidationMessageFor(model => model.id_user)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Tweet)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Tweet)
+            @Html.ValidationMessageFor(model => model.Tweet)
+        </div>
+
+        <p>
+            <input type="submit" value="Save" />
+        </p>
+    </fieldset>
+}
+
+<div>
+    @Html.ActionLink("Back to List", "Index")
+</div>
+

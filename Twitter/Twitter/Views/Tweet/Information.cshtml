@@ -3,17 +3,22 @@
 @{
     ViewBag.Title = "Information";
 }
+@{var title = @"Tweets";}
+<h1> @title </h1>
 
-<h2>Information</h2>
 
-<p>
-    @Html.ActionLink("Create New", "Create")
-</p>
-<table>
-    <tr>
+<script>
+    function confirmDeleteTweet(tweetID) {
+        if (confirm("Delete this tweet?") == true)
+            location.href = '@Url.Action("Delete")?id=' + tweetID + '';
+    }
+</script>
+
+<table border="1">
+    <tr>@*
         <th>
             @Html.DisplayNameFor(model => model.id_tweet)
-        </th>
+        </th>*@
         <th>
             @Html.DisplayNameFor(model => model.id_user)
         </th>
@@ -24,22 +29,23 @@
     </tr>
 
 @foreach (var item in Model) {
-    <tr>
+    <tr>@*
         <td>
             @Html.DisplayFor(modelItem => item.id_tweet)
-        </td>
+        </td>*@
         <td>
-            @Html.DisplayFor(modelItem => item.id_user)
+            @Html.DisplayFor(modelItem => item.id_user)   @* (...=>item.NameUser) *@
         </td>
         <td>
             @Html.DisplayFor(modelItem => item.Tweet)
         </td>
         <td>
-            @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
-            @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
-            @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
+            @Html.ActionLink("Edit", "Edit", new { id=item.id_tweet }) |
+            <button onclick="confirmDeleteTweet(@item.id_tweet)">Delete</button>
         </td>
     </tr>
 }
 
 </table>
+
+@Html.ActionLink("Create new Tweet", "Create") 

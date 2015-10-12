@@ -1,0 +1,47 @@
+﻿@model Models.TweetsModel
+
+@{
+    ViewBag.Title = "Create";
+}
+
+<h2>Create</h2>
+
+@using (Html.BeginForm("Create", "Tweet", FormMethod.Post))
+{
+    @Html.ValidationSummary(true)
+
+    <fieldset>
+        <legend>TweetsModel</legend>
+        <div class="editor-label">
+            @Html.LabelFor(model => model.id_tweet)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.id_tweet)
+        </div>
+        @Html.ValidationMessageFor(model => model.id_tweet)
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.id_user)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.id_user)
+
+        </div>
+            @Html.ValidationMessageFor(model => model.id_user)
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Tweet)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Tweet)
+        </div>
+        @Html.ValidationMessageFor(model => model.Tweet)
+        <p>
+            <input type="submit" value="Create" />
+        </p>
+    </fieldset>
+}
+
+<div>
+    @Html.ActionLink("Back to List", "Information")
+</div>
+

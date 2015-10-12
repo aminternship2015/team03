@@ -5,7 +5,12 @@
 }
 
 <h2>Information</h2>
-
+<script>
+    function confirmDeleteTweet(tweetID) {
+        if (confirm("Delete this tweet?") == true)
+            location.href = '@Url.Action("Delete")?id=' + tweetID + '';
+    }
+</script>
 <p>
     @Html.ActionLink("Create New", "Create")
 </p>
@@ -35,9 +40,8 @@
             @Html.DisplayFor(modelItem => item.Tweet)
         </td>
         <td>
-            @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
-            @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
-            @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
+            @Html.ActionLink("Edit", "Edit", new {  id=item.id_tweet  }) |
+            <button onclick="confirmDeleteTweet(@item.id_tweet)">Delete</button>
         </td>
     </tr>
 }

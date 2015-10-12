@@ -10,5 +10,7 @@ namespace Services
     public interface ITweetsService
     {
         List<TweetsModel> GetAllTweets();
+        bool AddTweet(TweetsModel tweet);
+        void DeleteTweet(int id);
     }
 }

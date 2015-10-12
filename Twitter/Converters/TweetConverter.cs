@@ -18,5 +18,13 @@ namespace Converters
             convertTweet.Tweet = tweet.Tweet1;
             return convertTweet;
         }
+        public Tweet ConvertToDal(TweetsModel tweet)
+        {
+            var convertTweet = new Tweet();
+            convertTweet.id_tweet = tweet.id_tweet;
+            convertTweet.id_user = (int)tweet.id_user;
+            convertTweet.Tweet1 = tweet.Tweet;
+            return convertTweet;
+        }
     }
 }

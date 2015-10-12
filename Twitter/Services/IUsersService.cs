@@ -10,6 +10,11 @@ namespace Services
     public interface IUsersService
     {
         List<UsersModel> GetAll();
-        List<UsersModel> Update(int id);
+        UsersModel GetUserById(int id);
+        bool Save(UsersModel user);
+        bool Delete(int id);
+        bool Add(UsersModel user);
+        bool GetUserForLogin(string email, string password);
+
     }
 }

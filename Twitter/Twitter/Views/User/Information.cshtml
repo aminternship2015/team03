@@ -3,17 +3,23 @@
 @{
     ViewBag.Title = "Information";
 }
+<!DOCTYPE html>
 
-<h2>Information</h2>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Information users</title>
+</head>
+<body>
 <script>
-    function()
-    {
-
+    function confirmUserToDelete(userId) {
+        if (confirm("Delete this user?") == true)
+            location.href = '@Url.Action("Delete")?id=' + userId + '';
     }
 </script>
-<p>
-    @Html.ActionLink("Create New", "Create")
-</p>
+
+<h2>Information</h2>
+
 <table>
     <tr>
         <th>
@@ -34,29 +40,31 @@
         <th></th>
     </tr>
 
-@foreach (var item in Model) {
-    <tr>
-        <td>
-            @Html.DisplayFor(modelItem => item.id_user)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.First_Name)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Last_Name)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Password)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Email)
-        </td>
-        <td>
-            @Html.ActionLink("Edit", "Edit", new { id=item.id_user }) |
-            @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
-            @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
-        </td>
-    </tr>
-}
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.id_user)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.First_Name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Last_Name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Password)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Email)
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { id = item.id_user }) |
+                <button onclick="confirmUserToDelete(@item.id_user)">Delete</button>
+            </td>
+        </tr>
+    }
 
 </table>
+    </body>
+</html>

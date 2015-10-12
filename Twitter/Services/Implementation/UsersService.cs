@@ -29,15 +29,30 @@ namespace Services
             }
             return listOfUser;
         }
-        public List<UsersModel> Update(int id)
+        public UsersModel GetUserById(int id)
         {
-            var users = userDal.Update(id);
-            List<UsersModel> listOfUser = new List<UsersModel>();
-            foreach (var user in users)
-            {
-                listOfUser.Add(userConvert.convertToUI(user));
-            }
-            return listOfUser;
-        } 
+            var users = userDal.GetUserById(id);
+            return userConvert.convertToUI(users);
+        }
+        public bool Save(UsersModel user)
+        {
+            userDal.Save(userConvert.convertToDal(user));
+            return true;
+        }
+        public bool Delete(int id)
+        {
+            userDal.Delete(id);
+            return true;
+        }
+        public bool Add(UsersModel user)
+        {
+            userDal.Add(userConvert.convertToDal(user));
+            return true;
+        }
+        public bool GetUserForLogin(string email, string password)
+        {
+            var result = userDal.GetUserForLogin(email,password);
+            return result;
+        }
     }
 }

@@ -111,6 +111,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\DependencyConfig.cs" />
+    <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\TweetController.cs" />
     <Compile Include="Controllers\UserController.cs" />
     <Compile Include="Global.asax.cs">
@@ -122,6 +123,9 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
+    <Content Include="Content\Css\LoginForm.css" />
+    <Content Include="Content\Js\LoginForm.js" />
+    <Content Include="Content\Js\StartPage.js" />
     <Content Include="Global.asax" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
@@ -157,11 +161,25 @@
     <Content Include="Views\User\Information.cshtml" />
   </ItemGroup>
   <ItemGroup>
-<<<<<<< HEAD
     <Content Include="Views\User\Edit.cshtml" />
-=======
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Home\StartPage.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\User\Registration.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\User\Login.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Tweet\Edit.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
     <Content Include="Views\Tweet\Information.cshtml" />
->>>>>>> origin/master
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Tweet\Create.cshtml" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

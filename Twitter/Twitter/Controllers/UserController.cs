@@ -5,23 +5,73 @@ using System.Web;
 using System.Web.Mvc;
 using Models;
 using Services;
+
 namespace Twitter.Controllers
 {
     public class UserController : Controller
     {
         //
         // GET: /User/
+        public UsersService currentUserService;
+        public UserController()
+        {
+            currentUserService = new UsersService();
+        }
 
         public ActionResult Information()
         {
-            UsersService currentUserService = new UsersService();
             return View(currentUserService.GetAll());
         }
-        public ActionResult Edit(int id) 
+        [HttpGet]
+        public ActionResult Edit(int id)
         {
-            UsersService currentUserService = new UsersService();
+            return View(currentUserService.GetUserById(id));
+        }
+        [HttpPost]
+        public ActionResult Save(UsersModel user)
+        {
+            currentUserService.Save(user);
+            return RedirectToAction("Information");
 
+        }
+
+        public ActionResult Delete(int id)
+        {
+            currentUserService.Delete(id);
+            return RedirectToAction("Information");
+        }
+        public ActionResult Registration()
+        {
             return View();
+        }
+        [HttpPost]
+        public ActionResult Registration(UsersModel user)
+        {
+            if (ModelState.IsValid)
+            {
+                currentUserService.Add(user);
+                return RedirectToAction("Login");
+            }
+            else return View(user);
+        }
+        public ActionResult Login()
+        {
+            return View();
+        }
+        [HttpPost]
+        public ActionResult SignIn(string email, string password)
+        {
+            if (ModelState.IsValid)
+            {
+                var result = currentUserService.GetUserForLogin(email, password);
+                if (result == true)
+                    return RedirectToAction("Information");
+                else
+                {
+                    return RedirectToAction("Login");
+                }
+            }
+            else return View(email, password);
         }
     }
 }

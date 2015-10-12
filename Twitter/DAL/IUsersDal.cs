@@ -9,8 +9,10 @@ namespace DAL
     public interface IUsersDal
     {
         List<User> GetAll();
-        //bool Add();
-        List<User> Update(int id);
-        //bool Delete();
+        bool Add(User user);
+        User GetUserById(int id);
+        bool Save(User user);
+        bool Delete(int id);
+        bool GetUserForLogin(string email, string password);
     }
 }

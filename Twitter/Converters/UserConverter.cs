@@ -20,7 +20,6 @@ namespace Converters
             listOfUser.Email = user.Email;
             return listOfUser;
         }
-
         public User convertToDal(UsersModel user)
         {
             var listOfUser = new User();

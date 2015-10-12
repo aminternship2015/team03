@@ -12,12 +12,12 @@ namespace Services
     public class TweetsService : ITweetsService
     {
         TweetsDal tweetDal;
-        TweetConverter tweetConerter;
+        TweetConverter tweetConverter;
 
         public TweetsService()
         {
             tweetDal = new TweetsDal();
-            tweetConerter = new TweetConverter();
+            tweetConverter = new TweetConverter();
         }
 
         public List<TweetsModel> GetAllTweets()
@@ -26,9 +26,32 @@ namespace Services
             List<TweetsModel> listOfTweets = new List<TweetsModel>();
             foreach (var tweet in tweets)
             {
-                listOfTweets.Add(tweetConerter.ConvertToUI(tweet));
+                listOfTweets.Add(tweetConverter.ConvertToUI(tweet));
             }
             return listOfTweets;
+        }
+
+        public bool AddTweet(TweetsModel tweet)
+        {
+            tweetDal.Add(tweetConverter.ConvertToDal(tweet));
+            return true;
+        }
+
+        public TweetsModel Get(int id)
+        {
+            var tweets = tweetDal.Get(id);
+            return tweetConverter.ConvertToUI(tweets);
+        }
+
+        public bool Save(TweetsModel tweet)
+        {
+            tweetDal.Save(tweetConverter.ConvertToDal(tweet));
+            return true;
+        }
+
+        public void DeleteTweet(int id)
+        {
+            tweetDal.Delete(id);
         }
     }
 }

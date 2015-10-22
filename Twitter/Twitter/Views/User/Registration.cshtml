@@ -1,0 +1,72 @@
+﻿@model Models.UsersModel
+<link href="~/Content/Css/Validation.css" rel="stylesheet" type="text/css" />
+<link href="~/Content/Css/loginForm.css" rel="stylesheet" type="text/css" />
+<link href="~/Content/Css/BodyStyle.css" rel="stylesheet" type="text/css" />
+@{
+    ViewBag.Title = "Registration";
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <title>Login</title>
+</head>
+<body class="bodyCss">
+    <div style="width: 50%; margin: 0 auto;">
+        @using (Html.BeginForm("Registration", "User", FormMethod.Post))
+        {
+            @Html.ValidationSummary(true)
+
+            <div class="loginForm">
+                <h2>Sign Up</h2>
+                <form role="form">
+
+                    <div class="editor-label">
+                        <label for="First_Name">First name</label>
+                    </div>
+                    <div class="form-group">
+                        @Html.TextBoxFor(model => model.First_Name, new { @id = "First_Name", @placeholder = "Enter first name", @class = "form-control" })
+                    </div>
+                    @Html.ValidationMessageFor(model => model.First_Name)
+
+                    <div class="editor-label">
+                        <label for="Last_Name">Last name</label>
+                    </div>
+                    <div class="form-group">
+                        @Html.TextBoxFor(model => model.Last_Name, new { @id = "First_Name", @placeholder = "Enter first name", @class = "form-control" })
+                    </div>
+                    @Html.ValidationMessageFor(model => model.Last_Name)
+
+                    <div class="editor-label">
+                        @Html.LabelFor(model => model.Password)
+                    </div>
+                    <div class="editor-field">
+                        @Html.PasswordFor(model => model.Password, new { @class = "form-control", placeholder = "Password" })
+                    </div>
+                    @Html.ValidationMessageFor(model => model.Password)
+
+                    <div class="editor-label">
+                        @Html.LabelFor(model => model.Email)
+                    </div>
+                    <div class="form-group">
+                        @Html.TextBoxFor(model => model.Email, new { @id = "Email", @placeholder = "Enter email", @class = "form-control" })
+                    </div>
+                    @Html.ValidationMessageFor(model => model.Email)
+
+                    <p>
+                        <button type="submit" class="btn btn-default">Sign Up</button>
+                    </p>
+                    @Html.ActionLink("Already have account", "Login", "Account")
+                </form>
+            </div>
+        }
+    </div>
+</body>
+</html>
